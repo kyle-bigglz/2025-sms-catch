@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="sms_catch.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30"
+            Spacing="20"
+            VerticalOptions="Center">
+
+            <Label
+                Text="SMS Catch"
+                FontSize="32"
+                FontAttributes="Bold"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="SMS 백업 서비스"
+                FontSize="18"
+                HorizontalOptions="Center"
+                TextColor="Gray" />
+
+            <Border
+                Padding="20"
+                StrokeShape="RoundRectangle 10"
+                BackgroundColor="{AppThemeBinding Light=#F0F0F0, Dark=#2D2D2D}">
+                <Border.Shadow>
+                    <Shadow Brush="Black" Offset="2,2" Radius="5" Opacity="0.3" />
+                </Border.Shadow>
+                <VerticalStackLayout Spacing="15">
+
+                    <Label
+                        x:Name="PermissionStatusLabel"
+                        Text="권한 상태: 확인 중..."
+                        FontSize="14" />
+
+                    <Label
+                        x:Name="BatteryStatusLabel"
+                        Text="배터리 최적화: 확인 중..."
+                        FontSize="14" />
+
+                    <Label
+                        x:Name="ServiceStatusLabel"
+                        Text="서비스 상태: 중지됨"
+                        FontSize="14" />
+
+                </VerticalStackLayout>
+            </Border>
+
+            <Button
+                x:Name="PermissionBtn"
+                Text="권한 요청"
+                Clicked="OnPermissionClicked"
+                BackgroundColor="#512BD4"
+                TextColor="White"
+                CornerRadius="10"
+                HeightRequest="50" />
+
+            <Button
+                x:Name="BatteryBtn"
+                Text="배터리 최적화 해제"
+                Clicked="OnBatteryOptimizationClicked"
+                BackgroundColor="#FF9800"
+                TextColor="White"
+                CornerRadius="10"
+                HeightRequest="50" />
+
+            <Button
+                x:Name="StartServiceBtn"
+                Text="서비스 시작"
+                Clicked="OnStartServiceClicked"
+                BackgroundColor="#28A745"
+                TextColor="White"
+                CornerRadius="10"
+                HeightRequest="50"
+                IsEnabled="False" />
+
+            <Button
+                x:Name="StopServiceBtn"
+                Text="서비스 중지"
+                Clicked="OnStopServiceClicked"
+                BackgroundColor="#DC3545"
+                TextColor="White"
+                CornerRadius="10"
+                HeightRequest="50"
+                IsEnabled="False" />
+
+            <Border
+                x:Name="LogFrame"
+                Padding="15"
+                StrokeShape="RoundRectangle 10"
+                BackgroundColor="{AppThemeBinding Light=#FAFAFA, Dark=#1E1E1E}"
+                HeightRequest="200">
+                <ScrollView>
+                    <Label
+                        x:Name="LogLabel"
+                        Text="로그가 여기에 표시됩니다..."
+                        FontSize="12"
+                        TextColor="Gray" />
+                </ScrollView>
+            </Border>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

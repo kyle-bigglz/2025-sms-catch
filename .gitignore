@@ -1,0 +1,178 @@
+# .NET MAUI / Visual Studio .gitignore
+
+## Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+## Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.rsuser
+
+## Visual Studio cache/options
+*_i.c
+*_p.c
+*_h.h
+*.ilk
+*.meta
+*.obj
+*.iobj
+*.pch
+*.pdb
+*.ipdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*_wpftmp.csproj
+*.log
+*.tlog
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.scc
+
+## Rider
+.idea/
+*.sln.iml
+
+## VS Code
+.vscode/
+
+## NuGet
+*.nupkg
+*.snupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+*.nuget.props
+*.nuget.targets
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+## .NET
+*.dll
+*.exe
+!**/bin/Release/**/publish/**/*.exe
+!**/bin/Release/**/publish/**/*.dll
+
+## Test results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+*.VisualState.xml
+TestResult.xml
+nunit-*.xml
+
+## Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+## macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+## MAUI / Xamarin specific
+*.apk
+*.aab
+*.ipa
+*.app
+*.dSYM/
+*.appx
+*.appxbundle
+*.msix
+*.msixbundle
+*.appxupload
+*.msixupload
+
+## Android
+*.keystore
+!debug.keystore
+google-services.json
+
+## iOS
+*.mobileprovision
+*.p12
+*.cer
+
+## Publish profiles
+[Pp]ublish/
+[Pp]ublish[Pp]rofiles/
+
+## Backup files
+*~
+*.bak
+*.swp
+
+## NCrunch
+_NCrunch_*
+.*crunch*.local.xml
+nCrunchTemp_*
+
+## JetBrains Rider
+*.sln.iml
+
+## Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+## CodeRush
+.cr/
+
+## Python Tools
+__pycache__/
+*.pyc
+
+## Cake
+tools/**
+!tools/packages.config
+
+## DocProject
+DocProject/buildhelp/
+DocProject/Help/*.HxT
+DocProject/Help/*.HxC
+DocProject/Help/*.hhc
+DocProject/Help/*.hhk
+DocProject/Help/*.hhp
+DocProject/Help/Html2
+DocProject/Help/html
+
+## Click-Once
+publish/
+
+## Web workbench
+.sass-cache/
+
+## SQL Server files
+*.mdf
+*.ldf
+*.ndf
+
+## Fody
+FodyWeavers.xsd
